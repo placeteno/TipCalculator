@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tip calculator" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <figure>
+        <img src="./images/logo.svg" alt="Splitter Logo" />
+      </figure>
+      <div class="container-app">
+        <div class="calculator-container">
+          <form class="bill-form">
+            <label class="bill-amount" for="billamount">Bill</label>
+            <input
+              name="billamount"
+              type="text"
+              id="billamount"
+              placeholder="0"
+            />
+          </form>
+          <form class="btns-form">
+            <span>Select Tip %</span>
+            <input name="btn5" value="5%" type="button" />
+            <input name="btn10" value="10%" type="button" />
+            <input name="btn15" value="15%" type="button" />
+            <input name="btn25" value="25%" type="button" />
+            <input name="btn50" value="50%" type="button" />
+            <input name="btncustom" type="text" placeholder="Custom" />
+          </form>
+          <form class="npeople-form">
+            <label for="npeople">Number of People</label>
+            <input type="text" name="npeople" id="npeople" placeholder="0" />
+          </form>
+        </div>
+        <div class="results-container">
+          <div class="results">
+            <p class="tip-type">Tip Amount <span>/ person</span></p>
+            <p class="results__tip-person">$0.00</p>
+            <p class="tip-type">Total <span>/ person</span></p>
+            <p class="results__tip-total">$0.00</p>
+          </div>
+          <button class="reset-btn" type="button">Reset</button>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/placeteno"
+          target="_blank"
+          >José González</a
+        >.
+      </div>
+    </main>
+  </body>
+</html>
