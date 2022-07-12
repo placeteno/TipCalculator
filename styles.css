@@ -162,9 +162,17 @@ label[for='billamount']:before {
   color: var(--very-dark-cyan);
 }
 
+
 label[for='npeople'] {
   position: relative;
   display: block;
+}
+
+.cantbezero {
+  position: absolute;
+  right: 0;
+  display: none;
+  color: rgb(255, 115, 0);
 }
 
 label[for='npeople']:before {
