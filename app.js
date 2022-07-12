@@ -28,7 +28,7 @@ const calculateTip = function (input) {
   }
 };
 
-btnPercentages.forEach(function (input, i, btnPercentages) {
+btnPercentages.forEach(function (input, _, btnPercentages) {
   input.addEventListener('click', () => {
     calculateTip(input);
   });
