@@ -8,6 +8,7 @@ const inputBill = document.querySelector('input[name="billamount"]');
 const inputPeople = document.querySelector('input[name="npeople"]');
 const errorMessage = document.querySelector('.cantbezero');
 
+// Calculation
 const calculateTip = function (input) {
   if (Number(inputPeople.value) > 0) {
     inputPeople.style.border = 'none';
@@ -28,6 +29,7 @@ const calculateTip = function (input) {
   }
 };
 
+// Event listners on buttons
 btnPercentages.forEach(function (input, _, btnPercentages) {
   input.addEventListener('click', () => {
     calculateTip(input);
@@ -41,6 +43,7 @@ document.addEventListener('keypress', e => {
   }
 });
 
+// Reset app
 document.querySelector('.reset-btn').addEventListener('click', () => {
   tipPerPerson.textContent = '$0.00';
   tipTotal.textContent = '$0.00';

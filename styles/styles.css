@@ -115,7 +115,7 @@ label[for='billamount']:before {
   bottom: 0;
   width: 15px;
   height: 15px;
-  background: url(./images/icon-dollar.svg) center / contain no-repeat;
+  background: url(../images/icon-dollar.svg) center / contain no-repeat;
 }
 
 
@@ -168,12 +168,7 @@ label[for='npeople'] {
   display: block;
 }
 
-.cantbezero {
-  position: absolute;
-  right: 0;
-  display: none;
-  color: rgb(255, 115, 0);
-}
+
 
 label[for='npeople']:before {
   content: "";
@@ -183,7 +178,15 @@ label[for='npeople']:before {
   bottom: 0;
   width: 15px;
   height: 15px;
-  background: url(./images/icon-person.svg) center / contain no-repeat;
+  background: url(../images/icon-person.svg) center / contain no-repeat;
+}
+
+.cantbezero {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  color: rgb(255, 115, 0);
 }
 
 /* =================
