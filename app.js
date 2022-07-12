@@ -12,7 +12,7 @@ const calculateTip = function (input) {
   if (Number(inputPeople.value) > 0) {
     inputPeople.style.border = 'none';
     errorMessage.style.display = 'none';
-    const inputPercetage = Number(input.value);
+    const inputPercetage = input.value.replace('%', ' ').trim();
     const tip =
       (Number(inputBill.value) * inputPercetage) /
       100 /
